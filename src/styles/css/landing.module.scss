@@ -1,0 +1,109 @@
+body {
+  background-color: blueviolet;
+  width: 100vw;
+  height: 100vh;
+}
+
+.pageLanding {
+  width: 100%;
+  height: 100%;
+
+  padding: 9em;
+  display: flex;
+  flex: 1;
+  align-items: center;
+  justify-content: space-between;
+  flex-direction: column;
+
+  h1 {
+    justify-self: center;
+    font-size: 58px;
+
+    span {
+      font-family: "Abril Fatface", sans-serif;
+      background: linear-gradient(to right, crimson, pink, springgreen);
+      background-size: 200% 200%;
+      animation: rainbow 2s ease-in-out infinite;
+      background-clip: text;
+      -webkit-background-clip: text;
+      color: rgba(0, 0, 0, 1);
+      text-align: center;
+      transition: color 0.2s ease-in-out;
+      text-transform: uppercase;
+      font-weight: 900;
+
+      &:hover {
+        color: rgba(0, 0, 0, 0);
+      }
+    }
+  }
+}
+
+.formulario {
+  background-color: var(--gray-50);
+  padding: 4em;
+  flex: 1;
+  align-items: center;
+
+  flex-direction: column;
+  h2 {
+    font-size: 50px;
+    margin-bottom: 0.5em;
+    text-align: center;
+  }
+}
+
+.dados {
+  gap: 0.25em;
+
+  input {
+    width: 100%;
+    padding: 12px 20px;
+    background-color: transparent;
+    margin: 8px 0;
+    display: inline-block;
+    border: none;
+    border-bottom: 1px solid rgb(76, 0, 255);
+    box-sizing: border-box;
+  }
+
+  button {
+    box-shadow: 0 4px 8px 0 rgb(0 0 0 / 25%), 0 6px 20px 0 rgb(0 0 0 / 23%);
+
+    color: black;
+    border-radius: 15px;
+    padding: 14px 20px;
+    margin: 8px;
+    border: none;
+    cursor: pointer;
+    width: 100%;
+
+    font-family: "Abril Fatface", sans-serif;
+    background: linear-gradient(to right, crimson, pink, springgreen);
+    background-size: 200% 200%;
+    animation: rainbow 2s ease-in-out infinite;
+    background-clip: text;
+    -webkit-background-clip: text;
+    color: rgba(0, 0, 0, 1);
+    display: block;
+    text-align: center;
+    transition: color 0.2s ease-in-out;
+    text-transform: uppercase;
+    font-weight: 900;
+
+    &:hover {
+      color: rgba(0, 0, 0, 0);
+    }
+  }
+}
+@keyframes rainbow {
+  0% {
+    background-position: left;
+  }
+  50% {
+    background-position: right;
+  }
+  100% {
+    background-position: left;
+  }
+}
