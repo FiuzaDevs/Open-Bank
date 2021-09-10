@@ -46,10 +46,10 @@ const Landing: React.FC = () => {
               <b>Usuario:</b>
             </label>
             <input type="text" name="username" ref={usernameRef} required />
-            <label htmlFor="nickname">
+            <label htmlFor="password">
               <b>Senha:</b>
             </label>
-            <input type="password" name="passwork" ref={passwordRef} required />
+            <input type="password" name="password" ref={passwordRef} required />
             <button disabled={loading} type="submit">
               Log in
             </button>

@@ -12,6 +12,10 @@ export default function Sidebar() {
     history.push("/Configuracao");
   }
 
+  function handleBack() {
+    history.goBack();
+  }
+
   return (
     <aside>
       <header>
@@ -27,7 +31,7 @@ export default function Sidebar() {
       </header>
 
       <footer>
-        <button type="button" onClick={handleClick}>
+        <button type="button" onClick={handleBack}>
           <FaCogs size={46} />
         </button>
         <button type="button" onClick={handleExit}>

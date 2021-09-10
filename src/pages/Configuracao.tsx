@@ -1,6 +1,5 @@
 import React from 'react';
-
-// import { Container } from './styles';
+import styles from '../styles/css/configuracao.module.scss';
 
 const Configuracao: React.FC = () => {
   return (
